@@ -4,6 +4,7 @@
 
 ---
 ### updated it to allow filters to show up on the same row as column headers.
+- Use option `replaceHeadingWithFilter: true` to enbale it.
 ---
 
 To help me maintain this project and add cool new features at your request, any donation would be appreciated.
