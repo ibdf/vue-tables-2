@@ -72,5 +72,5 @@
     "build": "babel lib -d compiled"
   },
   "tonicExampleFilename": "tonic-example.js",
-  "version": "0.6.90"
+  "version": "0.6.90a"
 }
