@@ -10,7 +10,8 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 
 module.exports = function (h, that) {
 
-  if (!that.opts.filterByColumn || !that.opts.filterable) return '';
+  //Modified to allow replacing headings with column filters
+  if (!that.opts.filterByColumn || !that.opts.filterable || that.opts.replaceHeadingWithFilter) return '';
 
   var textFilter = require('./text-filter')(h, that);
   var dateFilter = require('./date-filter')(h, that);

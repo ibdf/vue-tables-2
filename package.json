@@ -1,21 +1,29 @@
 {
-  "name": "vue-tables-2",
-  "description": "Vue.js 2 grid components",
-  "version": "0.6.90",
-  "keywords": [
-    "vue2",
-    "vuex",
-    "bootstrap",
-    "tables",
-    "grids"
-  ],
-  "repository": {
+  "_from": "github:ibdf/vue-tables-2",
+  "_id": "vue-tables-2@0.6.90",
+  "_inBundle": false,
+  "_integrity": "sha1-uFsbjWuHx9KH0Nl/8W73o+0Q7OA=",
+  "_location": "/vue-tables-2",
+  "_phantomChildren": {},
+  "_requested": {
     "type": "git",
-    "url": "https://github.com/matfish2/vue-tables-2"
+    "raw": "ibdf/vue-tables-2",
+    "rawSpec": "ibdf/vue-tables-2",
+    "saveSpec": "github:ibdf/vue-tables-2",
+    "fetchSpec": null,
+    "gitCommittish": "master"
   },
-  "files": [
-    "compiled"
+  "_requiredBy": [
+    "#USER",
+    "/"
   ],
+  "_resolved": "github:ibdf/vue-tables-2#517037c12da0751106e6237daf6d70468e42553a",
+  "_spec": "ibdf/vue-tables-2",
+  "_where": "/Users/ibdf/Sites/leaveRequest/leave-request",
+  "bugs": {
+    "url": "https://github.com/matfish2/vue-tables-2/issues"
+  },
+  "bundleDependencies": false,
   "dependencies": {
     "array-intersection": "^0.1.2",
     "clone": "^2.1.0",
@@ -25,12 +33,8 @@
     "vue-pagination-2": "^0.3",
     "vue-resource": "^0.9.0"
   },
-  "scripts": {
-    "build": "babel lib -d compiled"
-  },
-  "license": "MIT",
-  "main": "compiled/index.js",
-  "tonicExampleFilename": "tonic-example.js",
+  "deprecated": false,
+  "description": "Vue.js 2 grid components",
   "devDependencies": {
     "babel-cli": "^6.24.1",
     "babel-helper-vue-jsx-merge-props": "^2.0.2",
@@ -45,5 +49,28 @@
     "karma-chrome-launcher": "^0.2.1",
     "karma-firefox-launcher": "^0.1.7",
     "karma-jasmine": "^0.3.6"
-  }
+  },
+  "files": [
+    "compiled"
+  ],
+  "homepage": "https://github.com/matfish2/vue-tables-2#readme",
+  "keywords": [
+    "vue2",
+    "vuex",
+    "bootstrap",
+    "tables",
+    "grids"
+  ],
+  "license": "MIT",
+  "main": "compiled/index.js",
+  "name": "vue-tables-2",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/matfish2/vue-tables-2.git"
+  },
+  "scripts": {
+    "build": "babel lib -d compiled"
+  },
+  "tonicExampleFilename": "tonic-example.js",
+  "version": "0.6.90"
 }
