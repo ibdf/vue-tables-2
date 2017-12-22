@@ -83,6 +83,8 @@ module.exports = function () {
     config: false,
     saveState: false,
     storage: 'local',
-    columnsClasses: {}
+    columnsClasses: {},
+    replaceHeadingWithFilter: false,
+    spanChildRowFirstCol: false,
   };
 };

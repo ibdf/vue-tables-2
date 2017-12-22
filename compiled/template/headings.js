@@ -6,7 +6,7 @@ module.exports = function (h, that) {
 
   var headings = [];
 
-  if (that.hasChildRow && that.opts.childRowTogglerFirst) headings.push(h(
+  if (that.hasChildRow && that.opts.childRowTogglerFirst && !that.opts.spanChildRowFirstCol) headings.push(h(
     "th",
     null,
     []
@@ -25,7 +25,7 @@ module.exports = function (h, that) {
   }
   //end pulled
 
-  that.allColumns.map(function (column) {
+  that.allColumns.map(function (column, index) {
 
     //Pulled from column-filters.js
     var filter = false;
@@ -51,14 +51,17 @@ module.exports = function (h, that) {
     }
     //end pulled
 
-    //Modified to allow filters to replace column headings
+    // Modified to allow filters to replace column headings
     headings.push(h(
       "th",
       {
         on: {
           "click": that.orderByColumn.bind(that, column)
         },
-
+        // Modified to allow colspan on first childrow column
+        attrs: {
+          "colspan" : ((that.opts.spanChildRowFirstCol && that.hasChildRow && that.opts.childRowTogglerFirst && index === 0) ? 2 : 1),
+        },
         "class": that.sortableClass(column) },
       [h(
         "span",
