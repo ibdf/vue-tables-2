@@ -3,8 +3,12 @@
 [![npm version](https://badge.fury.io/js/vue-tables-2.svg)](https://badge.fury.io/js/vue-tables-2) [![GitHub stars](https://img.shields.io/github/stars/matfish2/vue-tables-2.svg)](https://github.com/matfish2/vue-tables-2/stargazers) [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/matfish2/vue-tables-2/master/LICENSE) 
 
 ---
-### updated it to allow filters to show up on the same row as column headers.
+
+## updated it to allow merging first childrow column header
+- Use option `spanChildRowFirstCol: true` to enable it.
+## updated it to allow filters to show up on the same row as column headers.
 - Use option `replaceHeadingWithFilter: true` to enbale it.
+
 ---
 
 To help me maintain this project and add cool new features at your request, any donation would be appreciated.
